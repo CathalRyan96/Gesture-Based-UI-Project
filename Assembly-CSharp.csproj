@@ -53,7 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\VoiceCommands.cs" />
+     <Compile Include="Assets\Scripts\VoiceCommands.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/User/Desktop/Unity-Projects/GestureProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
