@@ -418,7 +418,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 572070765}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.08, y: 3.69, z: 1}
+  m_LocalPosition: {x: -6.35, y: 0.35, z: 1}
   m_LocalScale: {x: 1.58625, y: 0.48801, z: 1}
   m_Children: []
   m_Father: {fileID: 634583852}
@@ -996,6 +996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b337eca5588e146b7e04a995adec23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newLevel: 
 --- !u!50 &1511230881
 Rigidbody2D:
   serializedVersion: 4
@@ -1053,9 +1054,10 @@ GameObject:
   - component: {fileID: 1568141511}
   - component: {fileID: 1568141510}
   - component: {fileID: 1568141509}
+  - component: {fileID: 1568141513}
   m_Layer: 0
   m_Name: platform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1181,6 +1183,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1568141513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568141507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08172b21517d1f34ba6c30a5c7f503ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1994602824
 GameObject:
   m_ObjectHideFlags: 0

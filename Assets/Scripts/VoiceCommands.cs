@@ -4,8 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
+using UnityEngine.SceneManagement;
+
 
 public class VoiceCommands : MonoBehaviour {
+    [SerializeField]
+    private string newLevel;
     private KeywordRecognizer keywordRecognizer;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
 
@@ -15,6 +19,7 @@ public class VoiceCommands : MonoBehaviour {
         actions.Add("left", Left);
         actions.Add("up", Up);
         actions.Add("down", Down);
+        actions.Add("play", Play);
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += SpeechRecognised;
@@ -46,6 +51,11 @@ public class VoiceCommands : MonoBehaviour {
     private void Down()
     {
         transform.Translate(0, -1, 0);
+    }
+
+    private void Play()
+    {
+        SceneManager.LoadScene(newLevel);
     }
 
 }
