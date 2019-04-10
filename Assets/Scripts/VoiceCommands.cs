@@ -20,6 +20,7 @@ public class VoiceCommands : MonoBehaviour {
         actions.Add("up", Up);
         actions.Add("down", Down);
         actions.Add("play", Play);
+        //actions.Add("help", Help);
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += SpeechRecognised;
@@ -57,5 +58,11 @@ public class VoiceCommands : MonoBehaviour {
     {
         SceneManager.LoadScene(newLevel);
     }
+
+    /*private void Help()
+    {
+        SceneManager.LoadScene(newLevel);
+    }*/
+
 
 }
