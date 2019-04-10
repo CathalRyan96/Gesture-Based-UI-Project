@@ -4,21 +4,28 @@ using UnityEngine;
 
 public class PlayerController1 : MonoBehaviour {
 
-    void OnCollisionEnter2D(Collision other)
+    public float horizontal;
+
+    void Update()
+    {
+        horizontal = Input.GetAxisRaw("Horizontal");
+    }
+
+	
+
+    void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Platform"))
         {
-            transform.SetParent(other.transform);
+            //if (transform.position.y > other.transform.position.y + 1)
+                transform.SetParent(other.transform);
         }
     }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+            transform.SetParent(null);
+        
+    }
 }

@@ -48,4 +48,21 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(scene.name);
         }
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            if(transform.position.y>other.transform.position.y+1)
+            transform.SetParent(other.transform);
+        }
+    }
+
+    void OnCollisonExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            transform.SetParent(null);
+        }
+    }
 }
