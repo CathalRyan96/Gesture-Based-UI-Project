@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController1 : MonoBehaviour {
 
@@ -27,5 +28,15 @@ public class PlayerController1 : MonoBehaviour {
         if (other.gameObject.CompareTag("Platform"))
             transform.SetParent(null);
         
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "Trap")
+        {
+            Scene scene;
+            scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+        }
     }
 }
