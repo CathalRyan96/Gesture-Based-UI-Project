@@ -41,6 +41,60 @@ and ensure that the microphone on my laptop would be able to listen out for voic
 - Select the Windows Icon
 - Scroll down to Capabilities and check the checkbox associated with the Microphone.
 
+### How I implemented voice commands into the Application
+First of all I created a C# Script called VoiceCommands.cs which is responsible for the majority of voice commands in this application. I implemented the voice commands by doing the following steps:
+
+Import Unity's speech recognition package into the script:
+
+```
+using UnityEngine.Windows.Speech
+```
+
+Initialized the keyword recognizer variable which tells Unity to look out for keywords:
+
+```
+private KeywordRecognizer keywordRecognizer;
+private Dictionary<string, Action> actions = new Dictionary<string, Action>();
+```
+
+Created actions associated with the different keywords:
+
+```
+actions.Add("right", Right);
+actions.Add("left", Left);
+actions.Add("up", Up);
+actions.Add("down", Down);
+actions.Add("play", Play);
+actions.Add("help", Help);
+```
+
+Set up methods that are associated with the keywords that run if the certain keyword is heard
+
+```
+	private void Right()
+    {
+        transform.Translate(1, 0, 0);
+    }
+
+    private void Left()
+    {
+        transform.Translate(-1, 0, 0);
+    }
+
+    private void Up()
+    {
+        transform.Translate(0, 1, 0);
+    }
+
+    private void Down()
+    {
+        transform.Translate(0, -1, 0);
+    }
+```
+
+
+ 
+
 
 ## Technologies used in creating the application
 
