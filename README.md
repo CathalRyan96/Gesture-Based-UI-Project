@@ -9,3 +9,16 @@ Myo armbands to control the blocks, or Flappy Bird using the Kinect as the contr
 with multiple users are also acceptable
 
 
+## Purpose of Application
+
+
+## Gestures Identified as appropriate for this Application
+
+
+## Hardware used in creating the application
+
+
+## Architecture for the Solution
+
+
+## Conclusions
