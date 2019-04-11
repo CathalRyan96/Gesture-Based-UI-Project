@@ -29,6 +29,17 @@ The main objectives I have for this project are:
 
 
 ## Gestures Identified as appropriate for this Application
+As I have mentioned above the gestures that I chose to implement were voice commands. I had to do a vast amount of research on this as I had never integrated voice commands with a game used by Unity.
+Firstly I had to open my Unity project, go into the build settings and download the Universal Windows Platform package for unity. Once this was downloaded I had to go into go into the build settings once again
+and ensure that the microphone on my laptop would be able to listen out for voice commands. I did this by:
+
+- Opening the project in Unity
+- Select File at the top left of the screen
+- Select Build Settings
+- Select PC, Mac and Linux Standalone
+- Select Player Settings
+- Select the Windows Icon
+- Scroll down to Capabilities and check the checkbox associated with the Microphone.
 
 
 ## Technologies used in creating the application
