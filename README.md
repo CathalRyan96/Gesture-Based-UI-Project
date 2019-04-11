@@ -19,12 +19,19 @@ For example in some of the later levels, platforms will begin to move and traps 
 
 
 ## Purpose of Application
+The main purpose of this application is to implement voice commands into a 2D platformer game where the user only uses voice commands to move the character.
+The main objectives I have for this project are:
+
+- Allow the user control the character by using voice commands.
+- Have a start menu which uses voice commands to navigate it.
+- Allow the user to pause the game by simply saying "Pause".
+- Allow the user to access a help menu to view the controls of the game and find of the main objective of the game.
 
 
 ## Gestures Identified as appropriate for this Application
 
 
-## Hardware used in creating the application
+## Technologies used in creating the application
 
 
 ## Architecture for the Solution
