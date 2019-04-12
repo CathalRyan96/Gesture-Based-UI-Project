@@ -71,7 +71,7 @@ actions.Add("help", Help);
 Set up methods that are associated with the keywords that run if the certain keyword is heard
 
 ```
-	private void Right()
+private void Right()
     {
         transform.Translate(1, 0, 0);
     }
@@ -92,11 +92,21 @@ Set up methods that are associated with the keywords that run if the certain key
     }
 ```
 
+The purpose of the methods listed above allowed the player to move right, left, up and down on the X and Y axis. The 'Right' method moves the player +1 spaces on the X axis. The 'Left' method moves the player -1 spaces
+on the X axis, the 'Up' method moves the player +1 spaces on the Y axis and the 'Down' method moves the player -1 spaces on the Y axis.
+
+
+
 
  
 
 
 ## Technologies used in creating the application
+While creating this application I used many technologies such as:
+
+### Unity
+![unity](https://user-images.githubusercontent.com/16310972/56030059-d4f37e80-5d13-11e9-8956-2b3650a67b5a.png)
+
 
 
 ## Architecture for the Solution
