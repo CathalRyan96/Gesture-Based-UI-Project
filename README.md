@@ -107,9 +107,18 @@ While creating this application I used many technologies such as:
 ### Unity
 ![unity](https://user-images.githubusercontent.com/16310972/56030059-d4f37e80-5d13-11e9-8956-2b3650a67b5a.png)
 
+I used Unity as the main game engine as I had worked with Unity previously in college and really liked how it worked and how easy it is to use.
+
+### Visual Studio 2017
+![vss](https://user-images.githubusercontent.com/16310972/56030316-6b27a480-5d14-11e9-8b98-0bdf5790d5a4.png)
+
+I used Visual Studio Code 2017 to write all of the code, which was all written in C#. The main reason for this is that I also had past experience with it as I used it throughout my college years.
+
 
 
 ## Architecture for the Solution
+
+
 
 
 ## Conclusions
