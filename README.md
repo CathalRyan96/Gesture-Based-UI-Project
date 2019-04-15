@@ -118,6 +118,18 @@ I used Visual Studio Code 2017 to write all of the code, which was all written i
 
 ## Architecture for the Solution
 
+### In game screens
+
+#### Start Screen
+![startScreen](https://user-images.githubusercontent.com/16310972/56170373-339d4e80-5fd9-11e9-8066-2ea2c06f9c5e.png)
+
+##### Help Screen
+![helpScreen](https://user-images.githubusercontent.com/16310972/56170451-6e9f8200-5fd9-11e9-9df8-34fb0d964ea0.png)
+
+#### Game Screen
+![inGame](https://user-images.githubusercontent.com/16310972/56170516-bf16df80-5fd9-11e9-98f0-4c3ef4ffba4f.png)
+
+
 
 
 
